@@ -261,6 +261,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/*FUncionamiento de control de seleccion 
 
 /* Efectos adicionales */
 .product-card {
@@ -290,4 +291,37 @@ html {
 /* Estilos para productos ocultos durante filtrado */
 .product-card.hidden {
   display: none;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #667eea;
+  background: transparent;
+  color: #667eea;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Botón activo - claramente diferenciado */
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transform: scale(1.05);
+  border-color: transparent;
+}
+
+/* Efecto adicional para el activo */
+.filter-btn.active:hover {
+  transform: scale(1.05) translateY(-2px);
+  background: #5a67d8;
 }
