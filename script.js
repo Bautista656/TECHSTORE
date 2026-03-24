@@ -1,26 +1,11 @@
-const botones = document.querySelectorAll(".filter-btn");
-const productos = document.querySelectorAll(".product-card");
+// Control de boton seleccionado
+const filterButtons = document.querySelectorAll('.filter-btn');
 
-botones.forEach(boton => {
-  boton.addEventListener("click", () => {
-
-    // Activar botón
-    botones.forEach(b => b.classList.remove("active"));
-    boton.classList.add("active");
-
-    const filtro = boton.dataset.filter;
-
-    productos.forEach(producto => {
-
-      const categoria = producto.getAttribute("data-category");
-
-      if (filtro === "all" || categoria === filtro) {
-        producto.style.display = ""; // 🔥 mejor que "block"
-      } else {
-        producto.style.display = "none";
-      }
-
-    });
-
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remover clase active de todos
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    // Agregar clase active al clickeado
+    button.classList.add('active');
   });
 });
