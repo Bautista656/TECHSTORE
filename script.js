@@ -10,15 +10,16 @@ botones.forEach(boton => {
 
     const filtro = boton.dataset.filter;
 
-    // Filtrar productos
     productos.forEach(producto => {
-      const categoria = producto.dataset.category;
+
+      const categoria = producto.getAttribute("data-category");
 
       if (filtro === "all" || categoria === filtro) {
-        producto.style.display = "block";
+        producto.style.display = ""; // 🔥 mejor que "block"
       } else {
         producto.style.display = "none";
       }
+
     });
 
   });
