@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">TechStore</h1>
+      <p class="subtitle">Tienda online de tecnología</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="filters-section">
+      <div class="container">
+        <h2 class="section-title">Filtrar productos</h2>
+
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">Mostrar todos</button>
+          <button class="filter-btn" data-filter="celulares">Celulares</button>
+          <button class="filter-btn" data-filter="laptops">Laptops</button>
+          <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="products-grid" id="productsGrid">
+          <article class="product-card" data-category="celulares">
+            <div class="product-image">
+              <img src="img/iphone15.jpg" alt="iPhone 15" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Celulares</span>
+              <h3 class="product-name">iPhone 15</h3>
+              <p class="product-description">Pantalla OLED, cámara avanzada y alto rendimiento.</p>
+              <p class="product-price">$18,999</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="celulares">
+            <div class="product-image">
+              <img src="img/galaxys24.jpg" alt="Samsung Galaxy S24" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Celulares</span>
+              <h3 class="product-name">Samsung Galaxy S24</h3>
+              <p class="product-description">Potencia, diseño premium y excelente batería.</p>
+              <p class="product-price">$17,499</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="laptops">
+            <div class="product-image">
+              <img src="img/macbookair.jpg" alt="MacBook Air" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptops</span>
+              <h3 class="product-name">MacBook Air</h3>
+              <p class="product-description">Ligera, rápida y perfecta para productividad.</p>
+              <p class="product-price">$24,999</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="laptops">
+            <div class="product-image">
+              <img src="img/lenovothinkpad.jpg" alt="Lenovo ThinkPad" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptops</span>
+              <h3 class="product-name">Lenovo ThinkPad</h3>
+              <p class="product-description">Ideal para trabajo profesional y multitarea.</p>
+              <p class="product-price">$21,990</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accesorios">
+            <div class="product-image">
+              <img src="img/mouselogitech.jpg" alt="Mouse Logitech" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accesorios</span>
+              <h3 class="product-name">Mouse Logitech</h3>
+              <p class="product-description">Precisión y comodidad para uso diario.</p>
+              <p class="product-price">$699</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accesorios">
+            <div class="product-image">
+              <img src="img/audifonoss.jpg" alt="Audífonos Sony" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accesorios</span>
+              <h3 class="product-name">Audífonos Sony</h3>
+              <p class="product-description">Sonido envolvente y gran comodidad.</p>
+              <p class="product-price">$1,899</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
