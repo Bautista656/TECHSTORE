@@ -15,7 +15,7 @@ botones.forEach(boton => {
       const categoria = producto.getAttribute("data-category");
 
       if (filtro === "all" || categoria === filtro) {
-        producto.style.display = ""; // 🔥 mejor que "block"
+        producto.style.display = "";
       } else {
         producto.style.display = "none";
       }
@@ -24,3 +24,6 @@ botones.forEach(boton => {
 
   });
 });
+
+
+//E tio que rollo porque no sale jajajaj XDXDXDDXDDXXDDDDDDDDD
