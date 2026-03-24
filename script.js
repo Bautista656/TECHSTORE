@@ -9,3 +9,6 @@ filterButtons.forEach(button => {
     button.classList.add('active');
   });
 });
+
+
+//E tio que rollo porque no sale jajajaj XDXDXDDXDDXXDDDDDDDDD
